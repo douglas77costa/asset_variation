@@ -3,6 +3,7 @@ Essa é uma aplicação feita em Flutter que mostra os 30 últimos pregões do B
 
 ## Como começar
 
+- Plataformas Android e iOS
 - Utilizar versão do Flutter 3.3.10
 - Para excutar aplicação com backend local, é necessário clonar o repositório [AssetVariationApi](https://github.com/douglas77costa/AssetVariationApi "AssetVariationApi") (mais detalhes no repositório) e depois apontar o IP da maquina local que está executando a aplicação no arquivo [api_base.dart](https://github.com/douglas77costa/asset_variation/blob/main/lib/app/core/shared/utils/api_base.dart "api_base.dart"), nesse arquivo alterar a variável "[localUrl](https://github.com/douglas77costa/asset_variation/blob/75be9077c5b5de4cf2838bffeb84404e28b3529c/lib/app/core/shared/utils/api_base.dart#L2 "localUrl")" com o endereço IP, alterando também a variável "[isLocal](https://github.com/douglas77costa/asset_variation/blob/75be9077c5b5de4cf2838bffeb84404e28b3529c/lib/app/core/shared/utils/api_base.dart#L6 "isLocal")" para true, não esqueça de manter o sufixo "/api" na url. Caso tenha algum problema para rodar o backend localmente, fiz o deploy do mesmo para o Azure, nesse caso não é necessário nenhuma alteração pois a variável "[defaultUrl](https://github.com/douglas77costa/asset_variation/blob/75be9077c5b5de4cf2838bffeb84404e28b3529c/lib/app/core/shared/utils/api_base.dart#L3 "defaultUrl")" já está apontando corretamente para API desenvolvida. Também há um anexo na raiz do repositório com o apk da aplicação "app.apk" pronto para ser instalado e utilizado.
 
