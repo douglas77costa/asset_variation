@@ -1,0 +1,1 @@
+enum StatusType {success, load, error, noConnection}

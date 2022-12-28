@@ -1,0 +1,47 @@
+name: asset_variation
+description: Asset Variation
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  intl: ^0.17.0
+  get: 4.6.5
+  syncfusion_flutter_core: ^20.4.38
+  syncfusion_flutter_charts: ^20.4.38
+  syncfusion_flutter_datagrid: ^20.4.38
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  google_fonts: ^3.0.1
+  json_annotation: ^4.7.0
+  dartz: ^0.10.1
+  connectivity_plus: ^3.0.2
+  fluentui_system_icons: ^1.1.189
+  flutter_launcher_icons: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.3
+  json_serializable: ^6.5.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon_launcher.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
