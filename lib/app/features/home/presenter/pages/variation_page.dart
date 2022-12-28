@@ -52,7 +52,7 @@ class VariationPage extends StatelessWidget {
             columnName: 'value',
             label: const Center(
                 child: Text(
-              'Total',
+              'Valor',
               textAlign: TextAlign.center,
             )),
           ),
