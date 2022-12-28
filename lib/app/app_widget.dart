@@ -15,10 +15,7 @@ class AppWidget extends StatelessWidget {
       theme: appTheme,
       getPages: AppPages.pages,
       initialRoute: Routes.splashScreen,
-      localizationsDelegates: const [
-        GlobalMaterialLocalizations.delegate,
-        SfGlobalLocalizations.delegate
-      ],
+      localizationsDelegates:  GlobalMaterialLocalizations.delegates,
       supportedLocales: const [Locale('pt', 'BR')],
       locale: const Locale('pt', 'BR'),
     );
