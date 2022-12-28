@@ -90,9 +90,9 @@ class ChartPage extends StatelessWidget {
       height: Get.height / 2.8,
       child: SfCartesianChart(
         plotAreaBorderWidth: 0,
-        primaryXAxis: NumericAxis(
+        primaryXAxis: DateTimeAxis(
             edgeLabelPlacement: EdgeLabelPlacement.shift,
-            interval: 6,
+            interval: 8,
             majorGridLines: const MajorGridLines(width: 0)),
         primaryYAxis: NumericAxis(
             numberFormat: NumberFormat.currency(symbol: "\$"),
@@ -106,12 +106,12 @@ class ChartPage extends StatelessWidget {
   }
 
   /// The method returns line series to chart.
-  List<AreaSeries<AssetVariation, num>> _getDefaultLineSeries() {
-    return <AreaSeries<AssetVariation, num>>[
-      AreaSeries<AssetVariation, num>(
+  List<AreaSeries<AssetVariation, DateTime>> _getDefaultLineSeries() {
+    return <AreaSeries<AssetVariation, DateTime>>[
+      AreaSeries<AssetVariation, DateTime>(
         animationDuration: 1000,
         dataSource: controller.assets,
-        xValueMapper: (AssetVariation asset, _) => asset.day,
+        xValueMapper: (AssetVariation asset, _) => asset.date,
         yValueMapper: (AssetVariation asset, _) => asset.value,
         color: AppColors.primary,
         name: 'Variação',

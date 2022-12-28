@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:syncfusion_localizations/syncfusion_localizations.dart';
 import 'package:get/get.dart';
 
 import 'core/routes/pages.dart';
@@ -14,8 +15,12 @@ class AppWidget extends StatelessWidget {
       theme: appTheme,
       getPages: AppPages.pages,
       initialRoute: Routes.splashScreen,
-      localizationsDelegates: GlobalMaterialLocalizations.delegates,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        SfGlobalLocalizations.delegate
+      ],
       supportedLocales: const [Locale('pt', 'BR')],
+      locale: const Locale('pt', 'BR'),
     );
   }
 }

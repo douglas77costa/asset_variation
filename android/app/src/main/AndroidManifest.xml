@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dc.asset.variation.asset_variation">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Variação BTC"
         android:name="${applicationName}"
