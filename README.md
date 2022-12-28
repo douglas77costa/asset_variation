@@ -1,4 +1,4 @@
-#Variação de ativos Bitcoin
+# Variação de ativos Bitcoin
 Essa é uma aplicação feita em Flutter que mostra os 30 últimos pregões do Bitcoin em USD, utiliza a API do Yahoo Finance para retornas os dados necessários através de uma outra API feita em .NET core.
 
 ## Como começar
